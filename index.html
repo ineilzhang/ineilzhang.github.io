@@ -62,6 +62,48 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-git使用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/23/git使用/" class="article-date">
+  <time datetime="2019-08-23T07:47:10.291Z" itemprop="datePublished">2019-08-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>git 代理设置</li>
+</ol>
+<blockquote>
+<p>git config –global http.proxy <a href="http://127.0.0.1:1080" target="_blank" rel="noopener">http://127.0.0.1:1080</a></p>
+</blockquote>
+<blockquote>
+<p>git config –global https.proxy <a href="https://127.0.0.1:1080" target="_blank" rel="noopener">https://127.0.0.1:1080</a></p>
+</blockquote>
+<blockquote>
+<p>git config –global –unset http.proxy</p>
+</blockquote>
+<blockquote>
+<p>git config –global –unset https.proxy</p>
+</blockquote>
+<p>2. </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/23/git使用/" data-id="cjzntci1r00023or3i4q5i0jx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/20/hello-world/" class="article-date">
@@ -101,7 +143,160 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/20/hello-world/" data-id="cjzjo68nd0000umr31r39lwzy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/20/hello-world/" data-id="cjzntci1h00003or39t3mi88c" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-单子" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/16/单子/" class="article-date">
+  <time datetime="2019-08-16T03:38:35.348Z" itemprop="datePublished">2019-08-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>Functor : Just (value) - f -&gt; Just (value)</li>
+</ul>
+<blockquote>
+<p>参数为一个上下文的值，通过一个返回普通值的函数，返回一个上下文的值<br>functorSum3 x = fmap (+3) (Just x)</p>
+</blockquote>
+<ul>
+<li>Applicative : Just (value) - Just (f) -&gt; Just (value)</li>
+</ul>
+<blockquote>
+<p>参数为一个上下文的值，通过一个返回普通值上下文的函数，返回一个上下文的值<br>applitiveSum3 x = Just (+3) &lt;*&gt; (Just x)</p>
+</blockquote>
+<ul>
+<li>Monad: Just (value) -Just(f -&gt; Just)-&gt; Just (value)</li>
+</ul>
+<blockquote>
+<p>参数为一个上下文的值，通过一个返回上下文的函数，返回一个上下文的值<br>Prelude&gt; sum3 x = Just ( x + 3)<br>Prelude&gt; monadSum3 x = (Just x) &gt;&gt;= sum3<br>stream x = RACStream(x)<br>bindStream x = (RACStream x) &gt;&gt;= stream</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/16/单子/" data-id="cjzntci1v00053or3haj5n1sg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MEO 功能规划" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/26/MEO 功能规划/" class="article-date">
+  <time datetime="2019-07-26T09:10:51.862Z" itemprop="datePublished">2019-07-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>多图片添加和自动浏览</li>
+<li>视频裁剪和添加</li>
+<li>PDF导出</li>
+<li>密码</li>
+<li></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/26/MEO 功能规划/" data-id="cjzntci1o00013or33pb6mha3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-崩溃原因记录" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/26/崩溃原因记录/" class="article-date">
+  <time datetime="2019-07-26T07:14:34.161Z" itemprop="datePublished">2019-07-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.向数组插入空元素</p>
+<blockquote>
+<p>objc <strong>* Terminating app due to uncaught exception ‘NSInvalidArgumentException’, reason: ‘*</strong> -[__NSPlaceholderArray initWithObjects:count:]: attempt to insert nil object from objects[1]</p>
+</blockquote>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[<span class="built_in">UIImage</span> imageNamed:<span class="string">@"ic_add_image"</span>]<span class="comment">//返回nil，如果没有</span></span><br></pre></td></tr></table></figure>
+
+<p>2.消息无法识别</p>
+<blockquote>
+<p>Terminating app due to uncaught exception ‘NSInvalidArgumentException’, reason: ‘-[NSNull string]: unrecognized selector sent to instance 0x26524d7e0’</p>
+</blockquote>
+<p>3.字典中插入nil</p>
+<blockquote>
+<p>Terminating app due to uncaught exception ‘NSInvalidArgumentException’, reason: ‘*** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[2]’  </p>
+</blockquote>
+<p>4.内部并发异常</p>
+<blockquote>
+<p>*** Terminating app due to uncaught exception ‘NSInternalInconsistencyException’, reason: ‘Invalid update: invalid number of rows in section 1.  The number of rows contained in an existing section after the update (1) must be equal to the number of rows contained in that section before the update (1), plus or minus the number of rows inserted or deleted from that section (0 inserted, 1 deleted) and plus or minus the number of rows moved into or out of that section (0 moved in, 0 moved out).’</p>
+</blockquote>
+<p>5.对象实例无法识别消息</p>
+<blockquote>
+<p>*** Terminating app due to uncaught exception ‘NSInvalidArgumentException’, reason: ‘-[__NSArrayM setHeight:]: unrecognized selector sent to instance 0x281158cc0’</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/26/崩溃原因记录/" data-id="cjzntci1u00043or3nu9r2r3k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-iOS 技能树" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/22/iOS 技能树/" class="article-date">
+  <time datetime="2019-07-22T08:59:50.782Z" itemprop="datePublished">2019-07-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###设计模式</p>
+<p>###hit-test</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/22/iOS 技能树/" data-id="cjzntci1t00033or3iaf1iegu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -129,7 +324,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
     </div>
   </div>
 
@@ -142,7 +337,23 @@
       <ul>
         
           <li>
+            <a href="/2019/08/23/git使用/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2019/08/20/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/16/单子/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/26/MEO 功能规划/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/26/崩溃原因记录/">(no title)</a>
           </li>
         
       </ul>
